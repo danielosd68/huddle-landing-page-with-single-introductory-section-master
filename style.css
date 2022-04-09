@@ -31,6 +31,24 @@ body {
   flex-direction: column;
 }
 
+@media only screen and (min-width: 1280px) {
+  html,
+  body {
+    background-image: url("images/bg-desktop.svg");
+    background-color: #674baf;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html content,
+  body content {
+    width: 90vw;
+  }
+}
+
 html content .logo,
 body content .logo {
   display: flex;
@@ -53,10 +71,37 @@ body content .logo img {
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  html content .logo img,
+  body content .logo img {
+    width: 20vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html content main,
+  body content main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+  }
+}
+
 @media only screen and (min-width: 980px) {
   html content main .main-section,
   body content main .main-section {
     width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html content main .main-section,
+  body content main .main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
 }
 
@@ -77,6 +122,20 @@ body content main .main-section .box img {
   html content main .main-section .box img,
   body content main .main-section .box img {
     width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html content main .main-section .box img,
+  body content main .main-section .box img {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  html content main .main-section .box img,
+  body content main .main-section .box img {
+    width: 40vw;
   }
 }
 
@@ -104,12 +163,34 @@ body content main .main-section .box .button button {
   transition: 0.2s;
 }
 
+@media only screen and (min-width: 1920px) {
+  html content main .main-section .box .button button,
+  body content main .main-section .box .button button {
+    width: 40%;
+  }
+}
+
 html content main .main-section .second,
 body content main .main-section .second {
   justify-content: center;
   flex-direction: column;
   text-align: center;
   margin-top: 3.5vh;
+}
+
+@media only screen and (min-width: 1280px) {
+  html content main .main-section .second,
+  body content main .main-section .second {
+    margin-left: 2vw;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  html content main .main-section .second,
+  body content main .main-section .second {
+    width: 30vw;
+  }
 }
 
 html content main .main-section .second .title h1,
@@ -132,6 +213,13 @@ body content .footer {
   margin-top: 3vh;
 }
 
+@media only screen and (min-width: 1280px) {
+  html content .footer,
+  body content .footer {
+    justify-content: right;
+  }
+}
+
 html content .footer .element,
 body content .footer .element {
   width: 20px;
@@ -144,4 +232,12 @@ body content .footer .element {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (min-width: 1280px) {
+  html content .footer .element,
+  body content .footer .element {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+  }
 }
