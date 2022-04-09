@@ -46,32 +46,53 @@ body content .logo img {
   height: auto;
 }
 
-html content main .box,
-body content main .box {
+@media only screen and (min-width: 980px) {
+  html content .logo img,
+  body content .logo img {
+    width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  html content main .main-section,
+  body content main .main-section {
+    width: 80vw;
+  }
+}
+
+html content main .main-section .box,
+body content main .main-section .box {
   display: flex;
   justify-content: center;
 }
 
-html content main .box img,
-body content main .box img {
+html content main .main-section .box img,
+body content main .main-section .box img {
   width: 90%;
   height: auto;
   margin-top: 5vh;
 }
 
-html content main .box .button,
-body content main .box .button {
+@media only screen and (min-width: 980px) {
+  html content main .main-section .box img,
+  body content main .main-section .box img {
+    width: 70vw;
+  }
+}
+
+html content main .main-section .box .button,
+body content main .main-section .box .button {
   margin-top: 2vh;
 }
 
-html content main .box .button button:hover,
-body content main .box .button button:hover {
+html content main .main-section .box .button button:hover,
+body content main .main-section .box .button button:hover {
   background-color: #e882e8;
   color: white;
 }
 
-html content main .box .button button,
-body content main .box .button button {
+html content main .main-section .box .button button,
+body content main .main-section .box .button button {
   width: 60%;
   padding: 1.5vh;
   background-color: white;
@@ -83,23 +104,23 @@ body content main .box .button button {
   transition: 0.2s;
 }
 
-html content main .second,
-body content main .second {
+html content main .main-section .second,
+body content main .main-section .second {
   justify-content: center;
   flex-direction: column;
   text-align: center;
   margin-top: 3.5vh;
 }
 
-html content main .second .title h1,
-body content main .second .title h1 {
+html content main .main-section .second .title h1,
+body content main .main-section .second .title h1 {
   font-size: 200%;
   margin-bottom: 1vh;
   margin-top: 0;
 }
 
-html content main .second .description,
-body content main .second .description {
+html content main .main-section .second .description,
+body content main .main-section .second .description {
   margin-top: 0;
   opacity: 0.8;
 }
